@@ -1,0 +1,270 @@
+:root {
+    --primary-green: #314528;
+    --beige: #f5f5dc;
+    --text-color: #314528;
+    --nav-bg: #8ca281;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--beige);
+    color: var(--text-color);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    background-color: var(--beige);
+}
+
+.logo-container .logo {
+    height: 90px;
+    object-fit: contain;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.language-toggle {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.lang-btn {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.lang-btn.active {
+    opacity: 1;
+}
+
+.donate-btn {
+    background-color: var(--primary-green);
+    color: var(--beige);
+    border: none;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'League Spartan', sans-serif;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.donate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--nav-bg);
+    padding: 1.2rem;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-btn {
+    background-color: var(--primary-green);
+    color: var(--beige);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'League Spartan', sans-serif;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #24351d;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-green);
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 10;
+    border-radius: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+/* Triangle pointer for dropdown */
+.dropdown::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent var(--primary-green) transparent;
+}
+
+.nav-item .dropdown.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown a {
+    color: var(--beige);
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: background-color 0.2s;
+    border-bottom: 1px solid rgba(245, 245, 220, 0.1);
+}
+
+.dropdown a:last-child {
+    border-bottom: none;
+}
+
+.dropdown a:hover {
+    background-color: #425e36;
+}
+
+.hero-section {
+    height: 70vh;
+    min-height: 500px;
+    background-image: url('assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.who-btn {
+    background-color: var(--primary-green);
+    color: var(--beige);
+    border: none;
+    padding: 1.2rem 4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'League Spartan', sans-serif;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* Shade effect requested */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.who-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+}
+
+.content-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--beige);
+    min-height: 50vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-green);
+}
+
+.content-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+    
+    .header-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .nav-btn {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .dropdown {
+        position: static;
+        transform: none;
+        width: 100%;
+        box-shadow: none;
+        margin-top: 0;
+        display: none;
+        background-color: #425e36;
+        border-radius: 10px;
+    }
+    
+    .nav-item .dropdown.show {
+        display: flex;
+    }
+    
+    .dropdown::before {
+        display: none;
+    }
+    
+    .dropdown a {
+        border-bottom: 1px solid rgba(245, 245, 220, 0.2);
+    }
+
+    .hero-section {
+        height: 50vh;
+        min-height: 400px;
+        padding-bottom: 2rem;
+    }
+    
+    .who-btn {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+}
