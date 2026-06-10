@@ -16,7 +16,9 @@ const translations = {
         'sub-videos': 'videos',
         'sub-stories': 'Stories',
         'nav-contact': 'Contact',
-        'who-btn': 'Who are we?'
+        'who-btn': 'Who are we?',
+        'about-us-heading': 'Welcome to Enkizo Foundation',
+        'about-us-text': 'We are dedicated to making a positive impact. Our goal is to support projects and empower young people. Join us in our mission to create a better world.'
     },
     nl: {
         'donate-btn': 'DONEREN',
@@ -35,7 +37,9 @@ const translations = {
         'sub-videos': 'Video\'s',
         'sub-stories': 'Verhalen',
         'nav-contact': 'Contact',
-        'who-btn': 'Wie zijn wij?'
+        'who-btn': 'Wie zijn wij?',
+        'about-us-heading': 'Welkom bij de Enkizo Foundation',
+        'about-us-text': 'Wij zetten ons in voor een positieve impact. Ons doel is om projecten te ondersteunen en jongeren in hun kracht te zetten. Doe met ons mee in onze missie om een betere wereld te creëren.'
     }
 };
 
