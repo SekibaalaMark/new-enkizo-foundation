@@ -32,8 +32,9 @@ body {
 
 .header-right {
     display: flex;
-    align-items: center;
-    gap: 2.5rem;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
 }
 
 .language-toggle {
