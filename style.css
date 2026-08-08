@@ -303,6 +303,92 @@ body {
     color: var(--text-color);
 }
 
+/* Plans Section */
+.plans-section {
+    padding: 2rem 2rem 5rem 2rem;
+    background-color: var(--beige);
+}
+
+.plans-header-card {
+    background-color: rgba(49, 69, 40, 0.05);
+    border-left: 6px solid var(--primary-green);
+    border-radius: 16px;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 8px 24px rgba(49, 69, 40, 0.08);
+    margin-bottom: 2.5rem;
+    text-align: left;
+}
+
+.plans-quote {
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.plans-subheading {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--primary-green);
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.pillar-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(49, 69, 40, 0.15);
+    border-top: 5px solid var(--primary-green);
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pillar-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(49, 69, 40, 0.12);
+}
+
+.pillar-title {
+    font-size: 1.35rem;
+    color: var(--primary-green);
+    font-weight: 700;
+}
+
+.pillar-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.pillar-list li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.pillar-list li::before {
+    content: "•";
+    color: var(--primary-green);
+    font-weight: bold;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 0;
+    top: -0.1rem;
+}
+
 /* Responsive design */
 @media screen and (max-width: 768px) {
     .top-bar {
@@ -404,5 +490,38 @@ body {
 
     .org-card-text {
         font-size: 1rem;
+    }
+
+    .plans-section {
+        padding: 1.5rem 1rem 3rem 1rem;
+    }
+
+    .plans-header-card {
+        padding: 1.5rem 1.25rem;
+        border-left-width: 4px;
+    }
+
+    .plans-quote {
+        font-size: 1.05rem;
+    }
+
+    .plans-subheading {
+        font-size: 1.15rem;
+    }
+
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pillar-card {
+        padding: 1.35rem;
+    }
+
+    .pillar-title {
+        font-size: 1.2rem;
+    }
+
+    .pillar-list li {
+        font-size: 0.98rem;
     }
 }
