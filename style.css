@@ -87,6 +87,11 @@ body {
     position: relative;
 }
 
+.nav-btn-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
 .nav-btn {
     background-color: var(--primary-green);
     color: var(--beige);

@@ -2,6 +2,7 @@ const translations = {
     en: {
         'donate-btn': 'DONATE',
         'nav-about': 'About us',
+        'sub-about': 'About us',
         'sub-goal': 'Our goal',
         'sub-org': 'Organization',
         'sub-plans': 'Plans',
@@ -53,11 +54,23 @@ const translations = {
         'pillar4-item1': 'Partnering with local organizations to embed long-term impact within the community.',
         'pillar4-item2': 'Engaging alumni as mentors and role models.',
         'pillar4-item3': 'Providing transparent reporting of results to donors and partners.',
-        'pillar4-item4': 'Investing in sustainable solutions (such as local knowledge transfer, rather than relying solely on financial aid).'
+        'pillar4-item4': 'Investing in sustainable solutions (such as local knowledge transfer, rather than relying solely on financial aid).',
+        'wwd-main-title': 'What We Do',
+        'wwd-core-title': 'Core of Our Approach',
+        'wwd-quote': '“Our approach is personal, dedicated, and sustainable. By partnering with trusted local organizations and committing to annual in-person visits, we aim to ensure our support is effective, transparent, and tailored to the true needs of the youth.”',
+        'wwd-item1-title': '1. Collaboration with Local Partners',
+        'wwd-item1-text': 'We work closely with the Yesu Foundation, an organization with deep knowledge of the local community and the students’ circumstances. Acting as our eyes and ears on the ground, they handle the selection, guidance, and ongoing follow-up of the students. This close partnership ensures our activities always align with local needs and context.',
+        'wwd-item2-title': '2. Annual Visits to Uganda',
+        'wwd-item2-text': 'Board members aim to visit the project in Uganda every year. During these visits, we meet directly with students, local partners, and other stakeholders to monitor progress and impact. These face-to-face interactions strengthen relationships while ensuring transparency and mutual trust.',
+        'wwd-item3-title': '3. Transparent Operations',
+        'wwd-item3-text': 'All resources are used responsibly. We maintain close communication with our partners and receive regular progress reports. Donors and supporters are kept informed of impact stories and milestones from Uganda. Additionally, donors will have the opportunity to visit the project in person.',
+        'wwd-item4-title': '4. Long-Term Commitment',
+        'wwd-item4-text': 'Our support extends beyond their graduation; we continue to assist students as they transition into employment or start their own businesses. Alumni are encouraged to give back by serving as role models and mentors for incoming students.'
     },
     nl: {
         'donate-btn': 'DONEREN',
         'nav-about': 'Over ons',
+        'sub-about': 'Over ons',
         'sub-goal': 'Ons doel',
         'sub-org': 'Organisatie',
         'sub-plans': 'Plannen',
@@ -83,7 +96,7 @@ const translations = {
         'org-item1-title': '1. Samenstelling',
         'org-item1-text': 'Het bestuur van de stichting bestaat uit drie leden. Elk bestuurslid brengt eigen kennis, ervaring en betrokkenheid in om de doelstellingen van de stichting te bevorderen.',
         'org-item2-title': '2. Gelijkwaardigheid',
-        'org-item2-text': 'Alle bestuursleden hebben een gelijke stem. Ongeacht rol of aandachtsgebied weegt elke stem even zwaar. Besluiten worden bij voorkeur genomen op basis van consensus. Is dit niet mogelijk, dan geldt een meerderheid van stemmen.',
+        'org-item2-text': 'Alle bestuursleden hebben een gelijke stem. Ongeacht rol or aandachtsgebied weegt elke stem even zwaar. Besluiten worden bij voorkeur genomen op basis van consensus. Is dit niet mogelijk, dan geldt een meerderheid van stemmen.',
         'org-item3-title': '3. Vergaderingen',
         'org-item3-text': 'Het bestuur vergadert meerdere keren per jaar, zowel fysiek als online, om de voortgang van activiteiten te bespreken en besluiten te nemen. Tijdens vergaderingen wordt de voortgang van projecten in Oeganda geëvalueerd, worden de financiën beoordeeld en wordt het beleid waar nodig bijgesteld. Van elke vergadering worden notulen gemaakt die formeel door het bestuur worden goedgekeurd.',
         'org-item4-title': '4. Taken en Verantwoordelijkheden',
@@ -109,38 +122,63 @@ const translations = {
         'pillar4-item1': 'Partnerschappen aangaan met lokale organisaties om langdurige impact in de gemeenschap te verankeren.',
         'pillar4-item2': 'Alumni inzetten als mentoren en rolmodellen.',
         'pillar4-item3': 'Transparant rapporteren over resultaten aan donateurs en partners.',
-        'pillar4-item4': 'Investeren in duurzame oplossingen (zoals lokale kennisoverdracht, in plaats van uitsluitend te vertrouwen op financiële hulp).'
+        'pillar4-item4': 'Investeren in duurzame oplossingen (zoals lokale kennisoverdracht, in plaats van uitsluitend te vertrouwen op financiële hulp).',
+        'wwd-main-title': 'Wat We Doen',
+        'wwd-core-title': 'Kern van Onze Aanpak',
+        'wwd-quote': '“Onze aanpak is persoonlijk, toegewijd en duurzaam. Door samen te werken met betrouwbare lokale organisaties en ons te verbinden aan jaarlijkse persoonlijke bezoeken, zorgen we ervoor dat onze ondersteuning effectief, transparant en afgestemd is op de werkelijke behoeften van de jongeren.”',
+        'wwd-item1-title': '1. Samenwerking met Lokale Partners',
+        'wwd-item1-text': 'Wij werken nauw samen met de Yesu Foundation, een organisatie met diepgaande kennis van de lokale gemeenschap en de omstandigheden van de studenten. Als onze ogen en oren ter plaatse verzorgen zij de selectie, begeleiding en continue opvolging van de studenten. Deze nauwe samenwerking zorgt ervoor dat onze activiteiten altijd aansluiten bij de lokale behoeften en context.',
+        'wwd-item2-title': '2. Jaarlijkse Bezoeken aan Oeganda',
+        'wwd-item2-text': 'Bestuursleden streven ernaar het project in Oeganda elk jaar te bezoeken. Tijdens deze bezoeken ontmoeten we studenten, lokale partners en andere belanghebbenden rechtstreeks om de voortgang en impact te monitoren. Deze persoonlijke interacties versterken relaties en waarborgen transparantie en wederzijds vertrouwen.',
+        'wwd-item3-title': '3. Transparante Werkwijze',
+        'wwd-item3-text': 'Alle middelen worden verantwoord ingezet. We onderhouden nauw contact met onze partners en ontvangen regelmatig voortgangsrapportages. Donateurs en supporters worden op de hoogte gehouden van ervaringsverhalen en mijlpalen uit Oeganda. Bovendien krijgen donateurs de gelegenheid om het project in levenden lijve te bezoeken.',
+        'wwd-item4-title': '4. Langdurige Betrokkenheid',
+        'wwd-item4-text': 'Onze ondersteuning reikt verder dan het afstuderen; we blijven studenten bijstaan bij de overstap naar werk of het starten van een eigen onderneming. Alumni worden aangemoedigd om wat terug te doen door als rolmodel en mentor op te treden voor nieuwe studenten.'
     }
 };
 
-let currentLang = 'en';
+let currentLang = localStorage.getItem('enkizo_lang') || 'en';
 
-function setLanguage(lang) {
-    if (lang === currentLang) return;
+function setLanguage(lang, force = false) {
+    if (lang === currentLang && !force) return;
     
     currentLang = lang;
+    localStorage.setItem('enkizo_lang', lang);
     
-    // Update active button styling
-    document.getElementById('lang-eng').classList.toggle('active', lang === 'en');
-    document.getElementById('lang-nl').classList.toggle('active', lang === 'nl');
+    const langEng = document.getElementById('lang-eng');
+    const langNl = document.getElementById('lang-nl');
+    if (langEng) langEng.classList.toggle('active', lang === 'en');
+    if (langNl) langNl.classList.toggle('active', lang === 'nl');
     
     // Translate texts
     const dict = translations[lang];
-    for (const [id, text] of Object.entries(dict)) {
-        const element = document.getElementById(id);
-        if (element) {
-            element.textContent = text;
+    if (dict) {
+        for (const [id, text] of Object.entries(dict)) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.textContent = text;
+            }
         }
     }
 }
 
-document.getElementById('lang-eng').addEventListener('click', () => setLanguage('en'));
-document.getElementById('lang-nl').addEventListener('click', () => setLanguage('nl'));
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('enkizo_lang') || 'en';
+    setLanguage(savedLang, true);
+});
+
+const langEngBtn = document.getElementById('lang-eng');
+const langNlBtn = document.getElementById('lang-nl');
+if (langEngBtn) langEngBtn.addEventListener('click', () => setLanguage('en'));
+if (langNlBtn) langNlBtn.addEventListener('click', () => setLanguage('nl'));
 
 // Direct to donate section when clicked
-document.getElementById('donate-btn').addEventListener('click', () => {
-    alert(currentLang === 'en' ? "Redirecting to Donate Section" : "Doorsturen naar Donatie Sectie");
-});
+const donateBtn = document.getElementById('donate-btn');
+if (donateBtn) {
+    donateBtn.addEventListener('click', () => {
+        alert(currentLang === 'en' ? "Redirecting to Donate Section" : "Doorsturen naar Donatie Sectie");
+    });
+}
 
 // Dropdown click functionality
 document.querySelectorAll('.nav-btn').forEach(btn => {
@@ -149,14 +187,15 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
         
         // Close other dropdowns
         document.querySelectorAll('.dropdown.show').forEach(dropdown => {
-            if (dropdown.previousElementSibling !== btn) {
+            if (dropdown.previousElementSibling !== btn && dropdown.parentElement.querySelector('.nav-btn') !== btn) {
                 dropdown.classList.remove('show');
             }
         });
         
         // Toggle current dropdown
-        const dropdown = btn.nextElementSibling;
-        if (dropdown && dropdown.classList.contains('dropdown')) {
+        const parentItem = btn.closest('.nav-item');
+        const dropdown = parentItem ? parentItem.querySelector('.dropdown') : null;
+        if (dropdown) {
             dropdown.classList.toggle('show');
         }
     });
