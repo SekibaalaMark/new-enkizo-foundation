@@ -530,3 +530,113 @@ body {
         font-size: 0.98rem;
     }
 }
+
+/* ── Beneficiary Stories ── */
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.story-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(49, 69, 40, 0.15);
+    border-top: 5px solid var(--primary-green);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(49, 69, 40, 0.12);
+}
+
+.story-profile {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem 1.75rem;
+    background-color: rgba(49, 69, 40, 0.04);
+    border-bottom: 1px solid rgba(49, 69, 40, 0.1);
+}
+
+.story-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 3px solid var(--primary-green);
+}
+
+.story-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.story-meta-row {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    flex-wrap: wrap;
+}
+
+.story-meta-label {
+    font-weight: 700;
+    color: var(--primary-green);
+}
+
+.story-meta-label::after {
+    content: ":";
+}
+
+.story-meta-value {
+    color: var(--text-color);
+}
+
+.story-body {
+    padding: 1.5rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.story-section-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.4rem;
+}
+
+.story-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .story-profile {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.25rem;
+    }
+
+    .story-meta-row {
+        justify-content: center;
+    }
+
+    .story-body {
+        padding: 1.25rem;
+    }
+}
