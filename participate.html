@@ -19,14 +19,19 @@
             <button class="donate-btn" id="donate-btn">DONATE</button>
         </div>
     </header>
-    
-    <nav class="main-nav">
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav">
         <div class="nav-item">
             <button class="nav-btn" id="nav-about">About us</button>
             <div class="dropdown">
                 <a href="about.html#goal" id="sub-goal">Our goal</a>
                 <a href="about.html#org" id="sub-org">Organization</a>
                 <a href="about.html#plans" id="sub-plans">Plans</a>
+                <a href="leadership.html#board" id="sub-leadership">Leadership & Foundation</a>
             </div>
         </div>
         <div class="nav-item">
@@ -66,6 +71,29 @@
         <div class="container">
             <h2 id="onetime-heading">One-time Donation</h2>
             <p id="onetime-text">Your one-time contribution directly supports student tuition and essential medical care.</p>
+
+            <div class="bank-details-card reveal">
+                <h3 id="bank-heading" class="bank-heading">Bank Details</h3>
+                <p id="bank-intro" class="bank-intro">Transfer your donation directly to our account:</p>
+                <ul class="bank-list">
+                    <li class="bank-item">
+                        <span id="bank-label-iban" class="bank-label">IBAN</span>
+                        <span class="bank-value">NL18RABO 0172111196</span>
+                    </li>
+                    <li class="bank-item">
+                        <span id="bank-label-bic" class="bank-label">BIC / SWIFT</span>
+                        <span class="bank-value">RABONL2U</span>
+                    </li>
+                    <li class="bank-item">
+                        <span id="bank-label-kvk" class="bank-label">Chamber of Commerce (KVK)</span>
+                        <span class="bank-value">99520729</span>
+                    </li>
+                    <li class="bank-item">
+                        <span id="bank-label-rsin" class="bank-label">RSIN / ANBI</span>
+                        <span class="bank-value">869024668</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -80,6 +108,7 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="translations.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
